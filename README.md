@@ -1,34 +1,27 @@
-# clean-project
-[![Travis build status](https://travis-ci.org/ogre3d/clean-project.svg?branch=master)](https://travis-ci.org/ogre3d/clean-project) [![build status](https://gitlab.com/ogre3d/clean-project/badges/master/build.svg)](https://gitlab.com/ogre3d/clean-project/commits/master)
 
-A clean ogre project with cmake. It aims to be a start for Ogre based projects and to compile on as much different environment as possible.
 
-### Features
+# Prerequesties
 
-|          | Travis Ubuntu 12.04 | Travis Ubuntu 14.04 | Gitlab CI Debian Jessie|
-|:--------:|:-------------------:|:-------------------:|:----------------------:|
-|Ogre 1.10 | :question:          | :question:          | :question:             |
-|Ogre 1.9  | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark:     |
-|Ogre 1.8  | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark:     |
-|Ogre 1.7  | :heavy_check_mark:  | :x:                 | :x:                    |
+## Prerequesties - CMake
 
-### Roadmap
-- Ogre 2.0 and 2.1 support.
-- Travis Mac support.
-- Appveyor support.
-- Android build.
-- Mingw cross-compilation support (build 32bits from 64bits and vice versa).
-- Mingw Windows build.
-- Maybe some unit tests?
+CMake installed into D:\AProgs\CMake\ (I used 4.0.1 version of CMake)
 
-### Build
-```bash
-mkdir build
-cd build
-cmake ..
-make
-make install
-```
 
-### Contributions
-... are highly welcomed!
+
+## Prerequesties - expected file tree
+
+- ROOT
+  
+  - vcpkg
+  
+  - ogre3d-clean-project
+    
+    - CMakeLists.txt
+
+# Setup
+
+## CMakeLists.txt
+
+- If vcpkg is somewhere other than expected file tree
+
+- Replace the `CMAKE_TOOLCHAIN_FILE` path with the actual relative path if your `vcpkg` folder is outside the project root.
