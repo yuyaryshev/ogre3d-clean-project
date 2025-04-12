@@ -1,5 +1,5 @@
 @echo off
-REM env-config.bat
+REM env-config.bat file below:
 REM --------- Following are used by game project ---------------------
 set OGRE3D_PROJECT_PATH=D:\b\Mine\git_gamedev\ogre3d-clean-project
 set OGRE_CONFIG_DIR=%OGRE3D_PROJECT_PATH%\cfg
@@ -14,3 +14,5 @@ set OGRE_BUILD_MODE=Debug
 
 set OGRE_SOURCES=D:/b/Mine/git_gamedev/ogre-sources/ogre-%OGRE_VERSION%
 set OGRE_BUILDS=D:/ogre3d_builds/
+
+
